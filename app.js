@@ -49,12 +49,6 @@ function shuffle() {
 
 shuffle();
 cards.forEach((card) => card.addEventListener("click", flipCard));
-
-// $(".memory-game").forEach((element) => {
-//   element.classList.remove("flip");
-// });
-
-// $(".memory-game > div").removeClass('flip');
 resetButton.addEventListener("click", resetBtn);
 
 function resetBtn() {
