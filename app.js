@@ -27,7 +27,9 @@ function checkForMatch() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
     count = count + 2;
-    if (count === cards.length) alert("YOU WIN!");
+    setTimeout(() => {
+      if (count === cards.length) alert("YOU WIN!");
+    }, 1000);
   } else {
     lockBoard = true;
 
